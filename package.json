@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "l": "^0.6.0",
+    "mongoose": "^8.8.3",
+    "multer": "^1.4.5-lts.1",
+    "pg": "^8.13.1",
+    "validator": "^13.12.0"
+  },
+  "name": "to_do_list",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "run": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
