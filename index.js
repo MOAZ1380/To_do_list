@@ -5,6 +5,7 @@ const cors = require('cors');      //  for fronted because port is different
 const path = require('path');
 
 const user_router = require('./route/users_route');
+const note_router = require('./route/Note_route');
 
 
 const http_status = require('./utils/http_status');
@@ -25,7 +26,9 @@ mongoose.connect(url)
 app.use(express.json())
 app.use(cors());    
 
-app.use('/api/users', user_router);   //  ../login , ../register => generate_token 
+app.use('/api/users', user_router);//  ../login , ../register => generate_token 
+app.use('/api/notes', note_router); // need token
+   
 
 app.all('*', (req, res, next) => {       // if The page is not found in route.
     res.status(404).json({status : http_status.ERROR, message : 'Not Found'});

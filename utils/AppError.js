@@ -5,7 +5,7 @@ class AppError extends Error {
     create(message, status_code, status_text){
         this.message = message;
         this.status_code = status_code;
-        this.status_text =status_text
+        this.status_text = status_text
         return this;
     }
 };
